@@ -1,0 +1,35 @@
+server:
+  port: 9095
+
+spring:
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: bartlomiej.j.stachowski@gmail.com
+    password: pkykgnlrmcgdcjgy
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+  application:
+    name: products
+  jpa:
+    database: mysql
+    hibernate:
+      ddl-auto: none
+  datasource:
+    url: jdbc:mysql://localhost:3306/products
+    username: root
+  servlet:
+    multipart:
+      max-file-size: 50MB
+      max-request-size: 50MB
+
+notifications:
+  email: aleksandra.stachowska.94@gmail.com
+
+photo:
+  upload:
+    path: I:/Projekty JAVA/products_tmp/
